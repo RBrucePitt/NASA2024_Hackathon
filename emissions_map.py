@@ -3,11 +3,11 @@ import pandas as pd
 
 # Sample data: City emissions data
 data = {
-    'city': ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix'],
-    'latitude': [40.7128, 34.0522, 41.8781, 29.7604, 33.4484],
-    'longitude': [-74.0060, -118.2437, -87.6298, -95.3698, -112.0740],
-    'ch4_emissions': [250, 180, 210, 230, 160],  # Sample CH4 emissions data
-    'co2_emissions': [5000, 4300, 3800, 4500, 3200]  # Sample CO2 emissions data
+    'city': ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix', 'Albuquerque'],
+    'latitude': [40.7128, 34.0522, 41.8781, 29.7604, 33.4484, 35.106766],
+    'longitude': [-74.0060, -118.2437, -87.6298, -95.3698, -112.0740, -106.629181],
+    'ch4_emissions': [250, 180, 210, 230, 160, 180],  # Sample CH4 emissions data
+    'co2_emissions': [5000, 4300, 3800, 4500, 3200, 2900]  # Sample CO2 emissions data
 }
 
 # Convert the data to a DataFrame
