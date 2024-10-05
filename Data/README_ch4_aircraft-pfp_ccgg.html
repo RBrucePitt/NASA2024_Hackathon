@@ -1,0 +1,463 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><link href="data:text/css,%3Ais(%5Bid*%3D'google_ads_iframe'%5D%2C%5Bid*%3D'taboola-'%5D%2C.taboolaHeight%2C.taboola-placeholder%2C%23credential_picker_container%2C%23credentials-picker-container%2C%23credential_picker_iframe%2C%5Bid*%3D'google-one-tap-iframe'%5D%2C%23google-one-tap-popup-container%2C.google-one-tap-modal-div%2C%23amp_floatingAdDiv%2C%23ez-content-blocker-container)%20%7Bdisplay%3Anone!important%3Bmin-height%3A0!important%3Bheight%3A0!important%3B%7D" rel="stylesheet" type="text/css"></head><body cz-shortcut-listen="true">
+<pre>---------------------------------------------------------------------
+
+Atmospheric Methane Dry Air Mole Fractions from the
+NOAA GML Carbon Cycle Aircraft Vertical Profile Network
+1992-present.
+
+Version: 2024-08-12
+--------------------------------------------------------------------
+CONTENTS
+
+1.       Data source and contacts
+2.       Use of data
+2.1      Citation
+3.       License 
+4.       Warnings
+5.       Update notes
+6.       Introduction
+7.       DATA - General Comments
+7.1      DATA - Sampling Locations
+7.2      DATA - File Name Description
+7.3      DATA - File Types
+7.4      DATA - Content
+7.5      DATA - QC Flags
+7.6      DATA - Collection Methods
+8.       Data retrieval
+9.       References
+
+--------------------------------------------------------------------
+1. DATA SOURCE AND CONTACTS
+
+National Oceanic and Atmospheric Administration (NOAA)
+Global Monitoring Laboratory (GML)
+Carbon Cycle Greenhouse Gases (CCGG)
+
+Correspondence concerning these data should be directed to:
+
+Kathryn McKain
+NOAA Global Monitoring Laboratory
+325 Broadway, GML-1
+Boulder, CO  80305
+U.S.A.
+
+email:    kathryn.mckain@noaa.gov
+
+--------------------------------------------------------------------
+2. USE OF DATA
+
+These data are made freely available to the public and the scientific
+community in the belief that their wide dissemination will lead to
+greater understanding and new scientific insights. To ensure that GML
+receives fair credit for their work please include relevant citation
+text in publications. We encourage users to contact the data providers,
+who can provide detailed information about the measurements and
+scientific insight.  In cases where the data are central to a
+publication, coauthorship for data providers may be appropriate.
+
+
+
+2.1 CITATION
+
+Please reference these data as
+
+   McKain, K., Sweeney, C., Baier, B., Crotwell, A., Crotwell, M., Handley, P.,
+   Higgs, J., Legard, T., Madronich, M., Miller, J. B., Moglia, E., Mund, J., 
+   Newberger, T., Wolter, S., &amp; NOAA Global Monitoring Laboratory. NOAA
+   Global Greenhouse Gas Reference Network Flask-Air PFP Sample Measurements of
+   CO2, CH4, CO, N2O, H2, SF6 and isotopic ratios collected from aircraft vertical
+   profiles [Data set]. Version: 2024-08-12. https://doi.org/10.15138/39HR-9N34
+
+--------------------------------------------------------------------
+3. LICENSE
+
+<p>These data were produced by NOAA and are not subject to copyright
+protection in the United States. NOAA waives any potential copyright and
+related rights in these data worldwide through the Creative Commons Zero
+1.0 Universal Public Domain Dedication (CC0 1.0)</p><a href="https://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" style="display:inline-
+block;" target="_blank">CC0 1.0 Universal<img src="README_ch4_aircraft-pfp_ccgg_files/cc.svg" style="height:22px!important; margin-left:3px;"><img src="README_ch4_aircraft-pfp_ccgg_files/zero.svg" style="height:22px!important; margin-left:3px;"></a>
+
+
+
+--------------------------------------------------------------------
+4. WARNINGS
+
+Every effort is made to produce the most accurate and precise
+measurements possible.  However, we reserve the right to make
+corrections to the data based on recalibration of standard gases
+or for other reasons deemed scientifically justified.
+
+We are not responsible for results and conclusions based on use
+of these data without regard to this warning.
+
+
+--------------------------------------------------------------------
+5. UPDATE NOTES
+
+Project-specific notes:
+
+2022-10-27
+
+Datasets are provided in the self describing ObsPack format.
+See https://gml.noaa.gov/ccgg/obspack/ for details.
+Aircraft pfp event data are available in NetCDF and ASCII text.
+
+--------------------------------------------------------------------
+6. INTRODUCTION
+
+Methane dry air mole fractions reported in these files were measured in air
+samples collected at NOAA GML Carbon Cycle Aircraft Vertical Profile Network
+sites and during aircraft campaigns. Since its inception in 1992, the Global
+Greenhouse Gas Reference Network’s aircraft program has been dedicated to
+collecting air samples in vertical profiles at sites mostly over North America.
+The program's mission is to capture seasonal and inter-annual changes in trace
+gas mixing ratios throughout the boundary layer and free troposphere (up to
+8000m/26,000 ft). Most Aircraft Network flights collect 12 flask samples at
+different fixed altitude levels using an automated Programmable Flask Package
+(PFP). These samples are stored in glass flasks for later analysis of carbon
+dioxide (CO2), carbon monoxide (CO), nitrous xxide (N2O), methane (CH4),
+molecular hydrogen (H2), and sulfur hexafluoride (SF6), as well as isotopes of
+CO2 and CH4, and multiple halo- and hydrocarbons.
+
+Data collected by the aircraft program provide a view of how the large-scale
+horizontal and vertical distribution of the measured trace gases change
+throughout a given year over the continent (Sweeney et al. 2015). The
+large-scale, three-dimensional picture of how trace mixing ratios change
+throughout the year has provided a means to estimate the contribution of the
+North America continent to the atmospheric concentration of long-lived tracers
+like carbonyl sulfide and CO2 (e.g. Montzka et al. 2007, Crevoisier et al.
+2010) and serves as an essential benchmark for forward and inverse modeling
+(i.e. Stephens et al. 2007, Yang et al. 2007, Peters et al. 2007) and to
+calibrate and evaluate remote sensing retrievals (e.g. Wunch et al. 2010, Emmons
+et al. 2004).
+
+See https://gml.noaa.gov/ccgg/aircraft/ and Sweeney et al. 2015 for more
+details.
+
+
+-------------------------------------------------------------------
+7. DATA – MEASUREMENT METHODS
+
+All samples were analyzed for CH4 at NOAA GML in Boulder, Colorado by gas
+chromatography with flame ionization detection (prior to August 2019) or by
+cavity ring-down spectroscopy (since August, 2019). Each sample aliquot was
+referenced to the NOAA 2004A methane standard scale (see Dlugokencky et al.
+2005, www.esrl.noaa.gov/gmd/ccl/ch4_scale.html). Measurements are reported
+in units of nanomol/mol (10^-9 mol CH4 per mol of dry air (nmol/mol) or
+parts per billion (ppb)).
+
+Prior to August 2019, aliquots of sample and standard gas were injected into a
+gas chromatograph (GC) with a sampling valve. Methane was separated from other
+sample constituents using packed columns and detected using flame ionization
+(FID). This process was highly automated for field and laboratory operations.
+Instrument response of the sample was compared to a standard of known CH4
+content. Repeatability of our measurements, based on repeated analysis of air
+from a high-pressure cylinder, ranged from 1 to 3 nmol/mol over the period of
+our measurements.
+
+In August 2019, we switched from GC/FID to a cavity ring-down spectrometer that
+analyzes CH4 and CO2. The analyzer is calibrated off-line with a suite of
+standards once per month relative to a dry, natural air, reference in a
+high-pressure cylinder. All air samples are measured relative the same
+reference, and CH4 and CO2 values in measured samples are calculated based on
+their ratio to the reference. Repeatability of the analyzer, based on repeated
+analysis of air from a high-pressure cylinder, is ~0.2 ppb (1 sigma).
+
+The uncertainty of our CH4 standard scale (NOAA 2004A) near 1800 ppb is
+estimated at +/- 0.2%, or about 3 nmol/mol.
+
+
+-------------------------------------------------------------------
+7.1 DATA - SAMPLING LOCATIONS
+
+For a summary of sampling locations, please visit:
+
+<a href="https://gml.noaa.gov/dv/site/?program=ccgg">https://gml.noaa.gov/dv/site/?program=ccgg</a> 
+or <a href="https://gml.noaa.gov/ccgg/aircraft/">https://gml.noaa.gov/ccgg/aircraft/</a>.
+
+Note: Data for all species may not be available for all sites listed 
+in the table.
+
+To view near real-time data, manipulate and compare data, and create
+custom graphs, please visit:
+
+<a href="https://gml.noaa.gov/dv/iadv/">https://gml.noaa.gov/dv/iadv/</a>.
+
+-------------------------------------------------------------------
+7.2 DATA - FILE NAME DESCRIPTION
+
+Encoded into each file name are the parameter (trace gas identifier); sampling 
+site; sampling project; laboratory ID number; measurement group (optional); and optional 
+qualifiers that further define the file contents.
+
+All file names use the following naming scheme:
+
+         1      2         3               4                   5            
+[parameter]_[site]_[project]_[lab ID number]_[optional measurement group]_[optional 
+
+         6           7
+qualifiers].[file type]
+
+
+1. [parameter]
+
+   Identifies the measured parameter or trace gas species.
+
+   (ex)
+   co2      Carbon dioxide
+   ch4      Methane
+   co2c13   d13C (co2)
+   merge    more than one parameter
+
+2. [site]
+
+   Identifies the sampling site code.
+
+   (ex)
+   brw
+   pocn30
+   car
+   amt
+
+3. [project]
+   
+   Identifies sampling platform and strategy.
+
+   (ex)
+   surface-flask
+   surface-pfp
+   surface-insitu
+   aircraft-pfp
+   aircraft-insitu
+   tower-insitu
+
+4. [lab ID number]
+
+   A numeric field that identifies the sampling laboratory (1,2,3, ...).
+   NOAA GML is lab number 1 (see https://gml.noaa.gov/ccgg/obspack/labinfo.html).
+
+5. [optional measurement group]
+
+  Identifies the group within the NOAA GML or the Institute of Arctic and Alpine
+  Research (INSTAAR) at the University of Colorado Boulder that made the
+  measurement.
+  It is possible to have multiple different groups measuring some of the same
+  trace gas species in our discrete samples.  
+
+  Measurement groups within NOAA and INSTAAR are 
+
+  ccgg:  NOAA Carbon Cycle Greenhouse Gases group (CCGG)
+  hats:  NOAA Halocarbons and other Atmospheric Trace Species group (HATS)
+  arl:   INSTAAR Atmospheric Research Laboratory (ARL)
+  sil:   INSTAAR Stable Isotope Laboratory (SIL)
+  curl:  INSTAAR Laboratory for Radiocarbon Preparation and Research (CURL)
+
+
+6. [optional qualifiers]
+
+   Optional qualifier(s) may indicate data subsetting or averaging.
+   Multiple qualifiers are delimited by an underscore (_).  A more detailed
+   description of the file contents is included within each data file.
+
+   (ex)
+   event         All measurement results for all collected samples (discrete (flask) data only).
+   month         Computed monthly averages all collected samples (discrete (flask) data only).
+   hour_####     Computed hourly averages for the specified 4-digit year (quasi-continuous data only)
+   HourlyData    Computed hourly averages for entire record (quasi-continuous data only)
+   DailyData     Computed daily averages for entire record (quasi-continuous data only)
+   MonthlyData   Computed monthly averages for entire record (quasi-continuous data only)
+
+7. [file type]
+   
+   File format (netCDF, ASCII text). 
+
+   (ex) 
+
+   txt           ASCII text file
+   nc            netCDF4 file
+
+-------------------------------------------------------------------
+7.3 DATA - FILE TYPE
+
+We now provide some NOAA Global Monitoring Laboratory measurements
+in two unique file formats; netCDF and ASCII text. 
+
+The Network Common Data Form (NetCDF) is a self-describing, machine-independent
+data format that supports creation, access, and sharing of array-oriented
+scientific data.  To learn more about netCDF and how to read netCDF
+files, please visit http://www.unidata.ucar.edu. 
+
+The ASCII text (technically UTF-8 encoded) file is derived directly from the 
+netCDF file.  The text file is also self-describing and can be viewed using 
+any ASCII or UTF-8 capable text editor.  "Self-describing" means the file 
+includes enough information about the included data (called metadata) 
+that no additional file is required to understand the structure of the data 
+and how to read and use the data.  Note that some non-ASCII characters (accents,
+international character sets) may be present in various names and contact 
+information.  These may require a UTF-8 capable text editor to view properly.
+
+-------------------------------------------------------------------
+7.4 DATA - CONTENT
+
+See individual files for description of the provided variables and other 
+dataset metadata.
+
+-------------------------------------------------------------------
+7.5 DATA - QC FLAGS 
+
+NOAA GML uses a 3-column quality control flag where each column
+is defined as follows:
+
+column 1    REJECTION flag.  An alphanumeric other
+            than a period (.) in the FIRST column indicates
+            a sample with obvious problems during collection
+            or analysis.  This measurement should not be interpreted.
+
+column 2    SELECTION flag.  An alphanumeric other than a
+            period (.) in the SECOND column indicates a sample
+            that is likely valid but does not meet selection
+            criteria determined by the goals of a particular
+            investigation.
+
+column 3    INFORMATION flag.  An alphanumeric other than a period (.) 
+            in the THIRD column provides additional information 
+            about the collection or analysis of the sample.
+
+            WARNING: A "P" in the 3rd column of the QC flag indicates
+            the measurement result is preliminary and has not yet been 
+            carefully examined by the PI.  The "P" flag is removed once 
+            the quality of the measurement has been assessed.
+
+
+-------------------------------------------------------------------
+7.6 DATA - COLLECTION METHODS
+
+A single-character code is used to identify the sample collection method.
+The codes are:
+    A - The automated or manual filling of a whole air sample using the
+Programmable Flask Package (PFP) and Programmable Compressor Package (PCP)air
+sampling devices. The air sample is contained in a 0.7 liter borosilicate
+glass container (flask) fitted with two Glass Expansion high vacuum glass
+piston valves sealed with PTFE O-rings. The flasks are typically flushed with
+10 liters (aircraft samples) or 75 liters (tower samples) of ambient air and
+then pressurized to 40 psia. Air is delivered through an intake tube using
+two diaphragm pumps connected in series and controlled with a microprocessor.
+The flow rate is approximately 15 L/min at sea level.  See Sweeney et al.
+2015 and Andrews et al. 2014 for more details.
+    C - Air samples are collected as with method ‘A’, but the sample air is
+dried before sample collection. Flasks are not pre-filled with ambient air
+before flushing and collecting  the air sample.
+    R - Air samples are collected as with method 'A', but with an additional
+glass conditioning step known as “prefilling”. During prefilling,  the glass
+containers are flushed and filled with ambient air and then vented and
+flushed immediately before air sample collection. This is a glass
+conditioning step that addresses glass wall effects of the gasses of interest
+(Andrews et al. 2014).
+    B - Air samples are collected as with method ‘R’, but with an additional
+drying step  using one of several techniques. In one method, e.g. site=ACT,
+air samples were dried with a two-stage chiller cooled to 5 degrees C; those
+taken below 3000 m MSL were also pressurized to 40 psia to further facilitate
+air sample drying (Baier et al. 2019). At tower sampling sites, M&amp;C chillers
+with temperatures set to approximately 3 degrees C and sub-ambient pressure
+due to high flow are used (Andrew et al. 2014). At CRV tower, a two-stage
+chiller set to -26 degrees C is used. 
+
+-------------------------------------------------------------------
+8. DATA RETRIEVAL
+
+All (ASCII text and netCDF) files are located in 
+"https://gml.noaa.gov/aftp/data/trace_gases/ch4/pfp/aircraft/".
+
+To transfer all files in a directory, it is more efficient to 
+download the tar or zipped files. Individual or zipped files can
+be downloaded using your web browser by clicking the hyperlinked file
+or right clicking hyperlink and using browser menu to 'save as' or similar.
+
+Files can also be accessed by anonymous ftp at aftp.cmdl.noaa.gov. 
+
+-------------------------------------------------------------------
+9. REFERENCES
+
+Andrews A. E., J. D. Kofler, M. E. Trudeau, J. C. Williams, D. H. Neff, K. A.
+Masarie, D. Y. Chao, D. R. Kitzis, P. C. Novelli, C. L. Zhao, E. J. Dlugokencky,
+P. M. Lang, M. J. Crotwell, M. L. Fischer, M. J. Parker, J. T. Lee, D. D. Baumann,
+A. R. Desai, C. O. Stanier, S. F. J. De Wekker, D. E. Wolfe, J. W. Munger, P. P.
+Tanks (2014) CO2, CO, and CH4 measurements from tall towers in the NOAA Earth
+System Research Laboratory’s Global Greenhouse Gas Reference Network:
+instrumentation, uncertainty analysis, and recommendations for future high-
+accuracy greenhouse gas monitoring efforts, Atmos. Meas. Tech., 7, 647–687,
+DOI: 10.5194/amt-7-647-2014.
+
+Baier B. C., C. Sweeney, Y. Choi, K. J. Davis, J. P. DiGangi, S. Feng,
+A. Fried, H. Halliday, J. Higgs, T. Lauvaux, B. R. Miller, S. A. Montzka,
+T. Newberger, J. B. Nowak, P. Patra, D. Richter, J. Walega, P. Weibring
+(2019) Multi-species assessment of factors influencing regional carbon
+enhancements during the wintertime ACT-America campaign", DOI:
+10.1029/2019JD031339.
+
+Crevoisier C., C. Sweeney, M. Gloor, J. L. Sarmiento, and P. P. Tans (2010)
+Estimate of regional US carbon sinks from three-dimensional atmospheric CO2
+sampling Proceedings of the National Academy of Sciences of the United States
+of America 107(43): 18348-18353 DOI: 10.1073/pnas.0900063107.
+
+Dlugokencky, E. J., R. C. Myers, P. M. Lang, K. A. Masarie, A. M. Crotwell,
+K. W. Thoning, B. D. Hall, J. W. Elkins, and L. P. Steele (2005) Conversion
+of NOAA atmospheric dry air methane mole fractions to a gravimetrically-
+prepared standard scale, J. Geophys. Res., 110, D18306, DOI: 
+10.1029/2005JD006035.
+
+Emmons, L. K., M. N. Deeter, J. C. Gille, D. P. Edwards, J.‐L. Attié, J. Warner,
+D. Ziskin, G. Francis, B. Khattatov, V. Yudin, J.‐F. Lamarque, S.‐P. Ho, D. Mao,
+J. S. Chen, J. Drummond, P. Novelli, G. Sachse, M. T. Coffey, J. W. Hannigan,
+C. Gerbig, S. Kawakami, Y. Kondo, N. Takegawa, H. Schlager, J. Baehr, and H. Ziereis
+(2004) Validation of Measurements of Pollution in the Troposphere (MOPITT) CO
+retrievals with aircraft in situ profiles, Journal of Geophysical Research:
+Atmospheres, DOI: 10.1029/2003JD004101.
+
+Montzka, S. A., P. Calvert, B. D. Hall, J. W. Elkins, T. J. Conway, P. P. Tans
+and C. Sweeney (2007) "On the global distribution, seasonality, and budget of
+atmospheric carbonyl sulfide (COS) and some similarities to CO2." Journal of
+Geophysical Research-Atmospheres 112(D9). DOI: 10.1029/2006JD007665.
+
+Peters, W., A. R. Jacobson, C. Sweeney, A. E. Andrews, T. J. Conway, K. Masarie,
+J. B. Miller, L. M. P. Bruhwiler, G. Petron, A. I. Hirsch, D. E. J. Worthy, G.
+R. van der Werf, J. T. Randerson, P. O. Wennberg, M. C. Krol and P. P. Tans
+(2007) An atmospheric perspective on North American carbon dioxide exchange:
+CarbonTracker, Proceedings of the National Academy of Sciences of the United
+States of America 104(48): 18925-18930, DOI: 10.1072/pnas.07089861074.
+
+Stephens, B. B., K. R. Gurney, P. P. Tans, C. Sweeney, W. Peters, L. M. P.
+Bruhwiler, P. Ciais, M. Ramonet, P. Bousquet, T. Nakazawa, S. Aoki, T. Machida,
+G. Inoue, N. Vinnichenko, J. Lloyd, A. Jordan, M. Heimann, O. Shibistova, R.
+Langenfelds, L. P. Steele, R. J. Francey and A. S. Denning (2007) Weak northern
+and strong tropical land carbon uptake from vertical profiles of atmospheric
+CO2, Science, 316(5832), 1732-1735, DOI: 10.1126/science.1137004.
+
+Sweeney, C., A. Karion, S. Wolter, T. Newberger, D. Guenther, J. A. Higgs, A. E.
+Andrews, P. M. Lang, D. Neff, E. Dlugokencky, J. B. Miller, S. A. Montzka, B. R.
+Miller, K. A. Masarie, S. C. Biraud, P. C. Novelli, M. Crotwell, A. M. Crotwell,
+K. Thoning, and P. P. Tans (2015) Seasonal climatology of CO2 across North America
+from aircraft measurements in the NOAA/ESRL Global Greenhouse Gas Reference
+Network, J. Geophys. Res. Atmos., 120, DOI: 10.1002/2014JD022591.
+
+Wunch, D., G. C. Toon, P. O. Wennberg, S. C. Wofsy, B. B. Stephens, M. L. Fischer,
+O. Uchino, J. B. Abshire, P. Bernath, S. C. Biraurd, J. F. L. Blavier, C. Boone,
+K. P. Bowman, E.V . Browell, T. Campos, B. J. Connor, B. C. Daube, N. M. Deutscher,
+M. Diao, J. W. Elkins, C. Gerbing, E. Gottlieb, D. W. T. Griffith, D. F. Hurst, R.
+Jimenez, G. Keppel-Aleks, E. A. Kort, R. Macatangay, T. Machida, H. Matsueda, F.
+Moore, I. Morino, S. Park, J. Robinson, C. M. Roehl, Y. Sawa, V. Sherlock, C.
+Sweeney, T. Tanaka, and M. A. Zondlo (2010). Calibration of the Total Carbon
+Column Observing Network using aircraft profile data, Atmospheric Measurement
+Techniques 3(5): 1351-1362, DOI: 10.5194/amt-3-1351-2010.
+
+Yang, Z., R. A. Washenfelder, G. Keppel-Aleks, P. O. Wennberg, N. Y. Krakauer,
+J. T. Randerson, P. P. Tans, and C. Sweeney (2007) New constraints on Northern
+Hemisphere growing season net flux. Geophysical Research Letters, 34 (12),
+DOI: 10.1029/2007GL029742.
+
+------------------------------------------------------------------- 
+</pre>
+
+
+</body></html>

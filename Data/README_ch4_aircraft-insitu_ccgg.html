@@ -1,0 +1,379 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><link href="data:text/css,%3Ais(%5Bid*%3D'google_ads_iframe'%5D%2C%5Bid*%3D'taboola-'%5D%2C.taboolaHeight%2C.taboola-placeholder%2C%23credential_picker_container%2C%23credentials-picker-container%2C%23credential_picker_iframe%2C%5Bid*%3D'google-one-tap-iframe'%5D%2C%23google-one-tap-popup-container%2C.google-one-tap-modal-div%2C%23amp_floatingAdDiv%2C%23ez-content-blocker-container)%20%7Bdisplay%3Anone!important%3Bmin-height%3A0!important%3Bheight%3A0!important%3B%7D" rel="stylesheet" type="text/css"></head><body cz-shortcut-listen="true">
+<pre>---------------------------------------------------------------------
+
+Atmospheric Methane Dry Air Mole Fractions from
+Quasi-continuous Measurements from the NOAA GML
+Carbon Cycle Aircraft Program, 2020-2022.
+
+Version: 2023-01-06
+--------------------------------------------------------------------
+CONTENTS
+
+1.       Data source and contacts
+2.       Use of data
+2.1      Citation
+3.       Reciprocity 
+4.       Warnings
+5.       Update notes
+6.       Introduction
+7.       DATA - General Comments
+7.1      DATA - Sampling Locations
+7.2      DATA - File Name Description
+7.3      DATA - File Types
+7.4      DATA - Content
+7.5      DATA - QC Flags
+7.6      DATA - Collection Methods
+8.       Data retrieval
+9.       References
+
+--------------------------------------------------------------------
+1. DATA SOURCE AND CONTACTS
+
+National Oceanic and Atmospheric Administration (NOAA)
+Global Monitoring Laboratory (GML)
+Carbon Cycle Greenhouse Gases (CCGG)
+
+Correspondence concerning these data should be directed to:
+
+Kathryn McKain
+NOAA Global Monitoring Laboratory
+325 Broadway, GML-1
+Boulder, CO  80305
+U.S.A.
+
+email:    kathryn.mckain@noaa.gov
+
+--------------------------------------------------------------------
+2. USE OF DATA
+
+These data are made freely available to the public and the
+scientific community in the belief that their wide dissemination
+will lead to greater understanding and new scientific insights.
+The availability of these data does not constitute publication
+of the data.  NOAA relies on the ethics and integrity of the user to
+ensure that GML receives fair credit for their work.  If the data 
+are obtained for potential use in a publication or presentation, 
+GML should be informed at the outset of the nature of this work.  
+If the GML data are essential to the work, or if an important 
+result or conclusion depends on the GML data, co-authorship
+may be appropriate.  This should be discussed at an early stage in
+the work.  Manuscripts using the GML data should be sent to GML
+for review before they are submitted for publication so we can
+ensure that the quality and limitations of the data are accurately
+represented.
+
+2.1 CITATION
+
+Please see individual data files for citation text.
+
+--------------------------------------------------------------------
+3. RECIPROCITY
+
+Use of these data implies an agreement to reciprocate.
+Laboratories making similar measurements agree to make their
+own data available to the general public and to the scientific
+community in an equally complete and easily accessible form.
+Modelers are encouraged to make available to the community,
+upon request, their own tools used in the interpretation
+of the GML data, namely well documented model code, transport
+fields, modeled mole fractions, and additional information 
+necessary for other scientists to repeat the work and to run 
+modified versions. Model availability includes collaborative 
+support for new users of the models.
+
+--------------------------------------------------------------------
+4. WARNINGS
+
+Every effort is made to produce the most accurate and precise
+measurements possible.  However, we reserve the right to make
+corrections to the data based on recalibration of standard gases
+or for other reasons deemed scientifically justified.
+
+We are not responsible for results and conclusions based on use
+of these data without regard to this warning.
+
+
+--------------------------------------------------------------------
+5. UPDATE NOTES
+
++++++++++++++++++++++++++++++++
+Project-specific notes:
+
+
+
+--------------------------------------------------------------------
+6. INTRODUCTION
+
+These files contain quasi-continuous atmospheric measurements of dry air mole
+fractions of methane collected from aircraft by the NOAA GML Carbon Cycle
+Aircraft Program during short-term campaigns and at ongoing sites.
+
+Flight tracks often include continuous ascending and descending vertical
+profiling from the near-surface to higher altitudes. Vertical profile data
+are useful for a variety of analyses in atmsopheric science, including
+assessment of remote-sensing total-column retrievals, evalution of
+vertical mixing and atmospheric transport, measurement of a set of values
+that reflect shorter and longer space/time scales, and for quantification
+of surface fluxes. When available, datasets will include a parameter which
+identifies individual vertical profiles.
+
+Contact NOAA GML for more specific information about individual datasets.
+
+-------------------------------------------------------------------
+7. DATA - GENERAL COMMENTS
+
+
+
+7.1 DATA - SAMPLING LOCATIONS
+
+For a summary of sampling locations, please visit
+
+<a href="https://www.esrl.noaa.gov/gmd/ccgg/insitu/">https://www.esrl.noaa.gov/gmd/ccgg/insitu/</a>.
+or <a href="https://gml.noaa.gov/ccgg/aircraft/">https://gml.noaa.gov/ccgg/aircraft/</a>.
+
+Note: Data for all species may not be available for all sites listed 
+in the table.
+
+To view near real-time data, manipulate and compare data, and create
+custom graphs, please visit
+
+<a href="https://gml.noaa.gov/dv/iadv/">https://gml.noaa.gov/dv/iadv/</a>.
+
+-------------------------------------------------------------------
+7.2 DATA - FILE NAME DESCRIPTION
+
+Encoded into each file name are the parameter (trace gas identifier); sampling 
+site; sampling project; laboratory ID number; measurement group (optional); and optional 
+qualifiers that further define the file contents.
+
+All file names use the following naming scheme:
+
+         1      2         3               4                   5            
+[parameter]_[site]_[project]_[lab ID number]_[optional measurement group]_[optional 
+
+         6           7
+qualifiers].[file type]
+
+
+1. [parameter]
+
+   Identifies the measured parameter or trace gas species.
+
+   (ex)
+   co2      Carbon dioxide
+   ch4      Methane
+   co2c13   d13C (co2)
+   merge    more than one parameter
+
+2. [site]
+
+   Identifies the sampling site code.
+
+   (ex)
+   brw
+   pocn30
+   car
+   amt
+
+3. [project]
+   
+   Identifies sampling platform and strategy.
+
+   (ex)
+   surface-flask
+   surface-pfp
+   surface-insitu
+   aircraft-pfp
+   aircraft-insitu
+   tower-insitu
+
+4. [lab ID number]
+
+   A numeric field that identifies the sampling laboratory (1,2,3, ...).
+   NOAA GML is lab number 1 (see https://gml.noaa.gov/ccgg/obspack/labinfo.html).
+
+5. [optional measurement group]
+
+  Identifies the group within the NOAA GML or the Institute of Arctic and Alpine
+  Research (INSTAAR) at the University of Colorado Boulder that made the
+  measurement.
+  It is possible to have multiple different groups measuring some of the same
+  trace gas species in our discrete samples.  
+
+  Measurement groups within NOAA and INSTAAR are 
+
+  ccgg:  NOAA Carbon Cycle Greenhouse Gases group (CCGG)
+  hats:  NOAA Halocarbons and other Atmospheric Trace Species group (HATS)
+  arl:   INSTAAR Atmospheric Research Laboratory (ARL)
+  sil:   INSTAAR Stable Isotope Laboratory (SIL)
+  curl:  INSTAAR Laboratory for Radiocarbon Preparation and Research (CURL)
+
+
+6. [optional qualifiers]
+
+   Optional qualifier(s) may indicate data subsetting or averaging.
+   Multiple qualifiers are delimited by an underscore (_).  A more detailed
+   description of the file contents is included within each data file.
+
+   (ex)
+   event         All measurement results for all collected samples (discrete (flask) data only).
+   month         Computed monthly averages all collected samples (discrete (flask) data only).
+   hour_####     Computed hourly averages for the specified 4-digit year (quasi-continuous data only)
+   HourlyData    Computed hourly averages for entire record (quasi-continuous data only)
+   DailyData     Computed daily averages for entire record (quasi-continuous data only)
+   MonthlyData   Computed monthly averages for entire record (quasi-continuous data only)
+
+7. [file type]
+   
+   File format (netCDF, ASCII text). 
+
+   (ex) 
+
+   txt           ASCII text file
+   nc            netCDF4 file
+
+-------------------------------------------------------------------
+7.3 DATA - FILE TYPE
+
+We now provide some NOAA Global Monitoring Laboratory measurements
+in two unique file formats; netCDF and ASCII text. 
+
+The Network Common Data Form (NetCDF) is a self-describing, machine-independent
+data format that supports creation, access, and sharing of array-oriented
+scientific data.  To learn more about netCDF and how to read netCDF
+files, please visit http://www.unidata.ucar.edu. 
+
+The ASCII text (technically UTF-8 encoded) file is derived directly from the 
+netCDF file.  The text file is also self-describing and can be viewed using 
+any ASCII or UTF-8 capable text editor.  "Self-describing" means the file 
+includes enough information about the included data (called metadata) 
+that no additional file is required to understand the structure of the data 
+and how to read and use the data.  Note that some non-ASCII characters (accents,
+international character sets) may be present in various names and contact 
+information.  These may require a UTF-8 capable text editor to view properly.
+
+-------------------------------------------------------------------
+7.4 DATA - CONTENT
+
+See individual files for description of the provided variables and other 
+dataset metadata.
+     
+-------------------------------------------------------------------
+7.5 DATA - QC FLAGS 
+
+NOAA GML uses a 3-column quality control flag where each column
+is defined as follows:
+
+column 1    REJECTION flag.  An alphanumeric other
+            than a period (.) in the FIRST column indicates
+            a sample with obvious problems during collection
+            or analysis.  This measurement should not be interpreted.
+
+column 2    SELECTION flag.  An alphanumeric other than a
+            period (.) in the SECOND column indicates a sample
+            that is likely valid but does not meet selection
+            criteria determined by the goals of a particular
+            investigation.
+
+column 3    INFORMATION flag.  An alphanumeric other than a period (.) 
+            in the THIRD column provides additional information 
+            about the collection or analysis of the sample.
+
+            WARNING: A "P" in the 3rd column of the QC flag indicates
+            the measurement result is preliminary and has not yet been 
+            carefully examined by the PI.  The "P" flag is removed once 
+            the quality of the measurement has been assessed.
+
+
+-------------------------------------------------------------------
+7.6 DATA - COLLECTION METHODS
+
+Although the measurement setup has varied slightly for each campaign and
+project due different requirements and constraints, there are common
+methodological approaches which are typically utilized by the NOAA GML
+Aircraft Program for insitu measurements (Karion et al. 2013). Aircraft
+insitu measurements are made with the Picarro G2401-m cavity ring-down
+spectrometer (Crosson 2008). Sample air is delivered to the analyzer
+from an inlet that is mounted on the exterior of the aircraft via 
+1/8" stainless steel tubing and a pump located downstream of the
+analyzer. 
+
+Mass flow for each analyzer and setup is typically ~150-200 sccm. Volume
+flow varies with temperature and pressure. Reported measurement times
+are corrected for lag time in the sample line. The native time resolution
+of individual analyzers is typically between 2 and 4 seconds and may vary
+slightly over time and among analyzers.
+
+Sample air is typically not dried. Dry air mole fractions are computed
+using analyzer-specific empirical corrections, derived from laboratory
+tests performed before and after deployment to the field, that account
+for dilution and pressure-broadening effects (Rella et al. 2013, Chen
+et al. 2013). Repeated characterization of the water correction for
+individual analyzers allows for uncertainty estimation of this term.
+
+Analyzers are typically calibrated in the lab before and after each field 
+deployment against 6-7 tanks that cover a wide range of values. Calibration
+tank values are  assigned by the Central Calibration Laboratory at NOAA GML
+(https://gml.noaa.gov/ccl/) and are traceable to World Meteorological
+Organization (WMO) scales. One or two calibration cylinders is often flown
+with the analyzer and measured before, during, and after each flight. When
+available, in-flight calibration measurements are typically used to
+derive a single offset correction for individual flights (Karion et al.
+2013). 
+
+Reported uncertainties include consideration of uncertainty in the 
+water correction, lab and in-flight calibration, precision, and
+uncertainty in values assinged to calibration tanks. If in-flight
+calibrations are not available, repeated lab calibrations are used
+estimate the uncertainty due to variability and drift in analyzer
+response. Continuous measurement of tank air during flight has
+also been used to investigate the sensitivity of the measurement 
+to changing conditions typically of flight conditions. When available,
+comparison with independent measurements is also considered in the
+uncertainty analysis.
+
+
+-------------------------------------------------------------------
+8. DATA RETRIEVAL
+
+All (ASCII text and netCDF) files are located in 
+"https://gml.noaa.gov/aftp/data/trace_gases/ch4/pfp/aircraft/".
+
+To transfer all files in a directory, it is more efficient to 
+download the tar or zipped files. Individual or zipped files can
+be downloaded using your web browser by clicking the hyperlinked file
+or right clicking hyperlink and using browser menu to 'save as' or similar.
+
+Files can also be accessed by anonymous ftp at aftp.cmdl.noaa.gov. 
+
+-------------------------------------------------------------------
+9. REFERENCES
+
+Chen H., A. Karion, C. W. Rella, J. Winderlich, C. Gerbig, A. Filges,
+T. Newberger, C. Sweeney, P. P. Tans (2013) Accurate measurement of
+carbon monoxide in humid air using the cavity ring-down spectroscopy
+(CRDS) technique, Atmsopheric Measurement Techniques, 6, 4,
+doi: 10.5194/amt-6-1031-2013.
+
+Crosson E. R. (2008) A cavity ring-down analyzer for measuring
+atmospheric levels of methane, carbon dioxide, and water vapor,
+Applied Physics B, 92, doi: 10.1007/s00340-008-3135-y.
+
+Karion A., C. Sweeney, S. Wolter, T. Newberger, H. Chen, A. E. Andrews,
+J. Kofler, D. Neff, P. Tans (2013) Long-term greenhouse gas measurements
+from aircraft, Atmospheric Measurement Techniques, 6, 3,
+doi: 10.5194/amt-6-511-2013.
+
+Rella, C. W., H. Chen, A. E. Andrews, A. Filges, C. Gerbig, J. Hatakka, A. Karion,
+N. L. Miles, S. J. Richardson, M. Steinbacher, C. Sweeney, B. Wastine, C. Zellweger
+(2013) High accuracy measurements of dry mole fractions of carbon dioxide and
+methane in humid air, Atmospheric Measurement Techniques, 6, 3,
+doi: 10.5194/amt-6-837-2013.
+
+
+------------------------------------------------------------------- 
+</pre>
+
+
+</body></html>
