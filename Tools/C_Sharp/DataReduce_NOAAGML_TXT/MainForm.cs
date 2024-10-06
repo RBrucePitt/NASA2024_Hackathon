@@ -194,8 +194,46 @@ namespace DataReduce_NOAAGML_TXT
         private void ConvertToOutputFile()
         {
             StreamWriter outHandle = new StreamWriter(TextBox_MF_OutputFIle.Text);
-            WriteHeader(outHandle);
+            if (CheckBox_MF_AddHeader.Checked)
+            {
+                WriteHeader(outHandle);
+            }
 
+            for (int dataOutLoop = 0; dataOutLoop < data_by_line.Count; dataOutLoop++)
+            {
+                // site_code year month day hour minute second datetime time_decimal midpoint_time value value_std_dev value_unc nvalue latitude longitude altitude elevation intake_height instrument qcflag profile_id flight_id temperature pressure rh
+                Dictionary<String, String> dataItems = data_by_line.ElementAt(dataOutLoop).Value;
+                String cityStation = "";
+                String latitude = "";
+                String longitude = "";
+                String value = "";
+                for (int dataItemLoop = 0; dataItemLoop < dataItems.Count; dataItemLoop++)
+                {
+                    String itemName = dataItems.ElementAt(dataItemLoop).Key;
+                    String itemValue = dataItems[itemName];
+                    if (headers_by_pos[dataItemLoop] == "site_code")
+                    {
+                        cityStation = itemValue;
+                    }
+                    if (headers_by_pos[dataItemLoop] == "latitude")
+                    {
+                        latitude = itemValue;
+                    }
+                    if (headers_by_pos[dataItemLoop] == "longitude")
+                    {
+                        longitude = itemValue;
+                    }
+                    if (headers_by_pos[dataItemLoop] == "value")
+                    {
+                        value = itemValue;
+                    }
+                }
+
+                String outString = cityStation + "," + latitude + "," + longitude + "," + value;
+                outHandle.WriteLine(outString);
+            }
+
+            outHandle.Close();
         }
     }
 }
